@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #171b26;
+}
+
+.site-header {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 24px;
+  background: #171b26;
+  border-bottom: 3px solid #d0a85d;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 42px;
+  color: white;
+  text-align: left;
+}
+
+.hero {
+  position: relative;
+  height: 320px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.terraria-banner {
+  display: block;
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center 12%;
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(ellipse at center, transparent 38%, rgba(0, 0, 0, 0.72) 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 40px;
+  margin: 0;
+  color: white;
+  background: #171b26;
+}
+
+.hero-content p {
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+.tlacitko {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 6px;
+  background: #d0a85d;
+  color: #171b26;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tlacitko:hover {
+  background: #e0bd79;
+}
+
+.tlacitko:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
